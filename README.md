@@ -6,10 +6,10 @@ Configure and test basic firewall rules to allow or block traffic using the wind
 Configure and test basic firewall rules to allow or block traffic.
 
 ## Tools Used
-- **Windows Defender Firewall with Advanced Security** (built into Windows OS)
+- **Windows Defender Firewall with Advanced Security** it is a built into Windows OS
 
 ### 1. Open Windows Firewall Configuration Tool
-1. Press `Win + S` and search for **Windows Defender Firewall with Advanced Security**.
+1. Press **Win + S** and search for **Windows Defender Firewall with Advanced Security**.
 2. Open the tool.
 
 ### 2. List Current Firewall Rules
@@ -21,21 +21,19 @@ Configure and test basic firewall rules to allow or block traffic.
   - **Profile**: Domain, Private, Public.
 
 ### 3. Add a Rule to Block Inbound Traffic on Port 23 (Telnet)
-1. In **Inbound Rules**, click **New Rule…** (right Actions pane).
+1. In **Inbound Rules**, click **New Rule…** (right Actions panel).
 2. Select **Port** → Click **Next**.
 3. Select **TCP**, specify port **23** → Click **Next**.
 4. Select **Block the connection** → Click **Next**.
 5. Apply rule to all profiles (Domain, Private, Public) → Click **Next**.
 6. Name it **Block TCP Port 23** → Click **Finish**.
 
----
-
 ### 4. Test the Rule
-- Try connecting to port 23 using `telnet <IP> 23`.
+- Try connecting to port 23 using **telnet <IP> 23**.
 - The connection should fail.
 
 ### 5. Remove the Test Block Rule
-1. In **Inbound Rules**, find `Block TCP Port 23`.
+1. In **Inbound Rules**, find **Block TCP Port 23**.
 2. Right-click → **Delete**.
 3. Confirm deletion.
 
@@ -49,7 +47,7 @@ Configure and test basic firewall rules to allow or block traffic.
 
 ## Deliverables
 - **Before Rule Screenshot** – inbound rules before adding the block.
-- **After Rule Screenshot** – inbound rules with `Block TCP Port 23`.
+- **After Rule Screenshot** – inbound rules with **Block TCP Port 23**.
 - **Test Result** – Telnet connection blocked.
 
 ## Outcome
